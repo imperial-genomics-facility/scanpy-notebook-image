@@ -9,6 +9,7 @@ ENV TMPDIR=/home/$NB_USER/.tmp
 ENV PATH $PATH:/home/$NB_USER/miniconda3/bin/
 RUN rm -f /home/$NB_USER/environment.yml
 COPY environment.yml /home/$NB_USER/environment.yml
+COPY examples /home/$NB_USER/examples
 RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     conda deactivate && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
