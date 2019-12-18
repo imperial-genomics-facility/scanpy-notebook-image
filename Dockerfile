@@ -7,9 +7,11 @@ USER $NB_USER
 WORKDIR /home/$NB_USER
 ENV TMPDIR=/home/$NB_USER/.tmp
 ENV PATH $PATH:/home/$NB_USER/miniconda3/bin/
+RUN rm -f /home/$NB_USER/environment.yml
+COPY environment.yml /home/$NB_USER/environment.yml
 RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
-    source deactivate && \
-    conda env create -q -n notebook-env --file /home/$NB_USER/environment.yml && \
+    conda deactivate && \
+    conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
     conda clean -a -y && \
     rm -rf /home/$NB_USER/.cache && \
     rm -rf /tmp/* && \
