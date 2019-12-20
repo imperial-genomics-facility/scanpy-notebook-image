@@ -9,7 +9,6 @@ dependencies:
   - r-base=3.5.1
   - bioconductor-biocinstaller=1.32.1
   - bioconductor-scran=1.10.1
-  - #bioconductor-slingshot=1.4.0
   - scipy==1.1.0
   - statsmodels==0.9.0
   - numba=0.43.0
