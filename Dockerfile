@@ -4,6 +4,8 @@ LABEL version="0.0.1"
 LABEL description="Docker image for running Scanpy based single cell analysis"
 ENV NB_USER vmuser
 ENV NB_UID 1000
+USER root
+WORKDIR /
 RUN apt-get -y update &&   \
     apt-get install --no-install-recommends -y \
       git  && \
