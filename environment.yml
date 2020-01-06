@@ -26,4 +26,3 @@ dependencies:
     - sklearn
     - gprofiler-official==1.0.0
     - git+https://github.com/flying-sheep/anndata2ri.git
-    - numpy==1.18.0
