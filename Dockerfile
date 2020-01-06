@@ -4,10 +4,16 @@ LABEL version="0.0.1"
 LABEL description="Docker image for running Scanpy based single cell analysis"
 ENV NB_USER vmuser
 ENV NB_UID 1000
+RUN apt-get -y update &&   \
+    apt-get install --no-install-recommends -y \
+      git  && \
+    apt-get purge -y --auto-remove && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 USER $NB_USER
 WORKDIR /home/$NB_USER
 ENV TMPDIR=/home/$NB_USER/.tmp
-ENV PATH $PATH:/home/$NB_USER/miniconda3/bin/
+ENV PATH=$PATH:/home/$NB_USER/miniconda3/bin/
 RUN rm -f /home/$NB_USER/environment.yml
 COPY environment.yml /home/$NB_USER/environment.yml
 COPY examples /home/$NB_USER/examples
