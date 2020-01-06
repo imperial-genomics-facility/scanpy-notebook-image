@@ -12,7 +12,8 @@ RUN rm -f /home/$NB_USER/environment.yml
 COPY environment.yml /home/$NB_USER/environment.yml
 COPY examples /home/$NB_USER/examples
 USER root
-RUN chown -R ${NB_UID} /home/$NB_USER/ 
+RUN chown ${NB_UID} /home/$NB_USER/environment.yml && \
+    chown -R ${NB_UID} /home/$NB_USER/examples
 USER $NB_USER
 WORKDIR /home/$NB_USER
 RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
