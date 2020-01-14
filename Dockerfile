@@ -39,7 +39,7 @@ RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     mkdir -p /home/$NB_USER/.cache && \
     find miniconda3/ -type f -name *.pyc -exec rm -f {} \;
 RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
-    source activate notebook-env && \
+    conda activate notebook-env && \
     Rscript /home/$NB_USER/r_lib.r
 EXPOSE 8888
 ENTRYPOINT [ "/usr/local/bin/tini","--","/home/vmuser/entrypoint.sh" ]
