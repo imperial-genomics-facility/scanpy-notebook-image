@@ -38,7 +38,7 @@ RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     mkdir -p ${TMPDIR} && \
     mkdir -p /home/$NB_USER/.cache && \
     find miniconda3/ -type f -name *.pyc -exec rm -f {} \;
-RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh &&
+RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     source activate notebook-env && \
     Rscript /home/$NB_USER/r_lib.r
 EXPOSE 8888
