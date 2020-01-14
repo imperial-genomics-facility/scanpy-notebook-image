@@ -21,10 +21,12 @@ ENV PATH=$PATH:/home/$NB_USER/miniconda3/bin/
 RUN rm -f /home/$NB_USER/environment.yml
 COPY environment.yml /home/$NB_USER/environment.yml
 COPY r_lib.r /home/$NB_USER/r_lib.r
+COPY install.sh /home/$NB_USER/install.sh
 COPY examples /home/$NB_USER/examples
 USER root
 RUN chown ${NB_UID} /home/$NB_USER/environment.yml && \
     chown ${NB_UID} /home/$NB_USER/r_lib.r && \
+    chown ${NB_UID} /home/$NB_USER/install.sh && \
     chown -R ${NB_UID} /home/$NB_USER/examples
 USER $NB_USER
 WORKDIR /home/$NB_USER
@@ -38,7 +40,7 @@ RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     mkdir -p ${TMPDIR} && \
     mkdir -p /home/$NB_USER/.cache && \
     find miniconda3/ -type f -name *.pyc -exec rm -f {} \;
-RUN Rscript /home/$NB_USER/r_lib.r
+RUN bash /home/$NB_USER/install.sh
 EXPOSE 8888
 ENTRYPOINT [ "/usr/local/bin/tini","--","/home/vmuser/entrypoint.sh" ]
 CMD [ "notebook" ]
