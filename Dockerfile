@@ -12,6 +12,7 @@ RUN apt-get -y update &&   \
       libxrender1 \
       libreadline6-dev \
       libreadline6 \
+      libicu-dev \
       git  && \
     apt-get purge -y --auto-remove && \
     apt-get clean && \
