@@ -25,6 +25,10 @@ dependencies:
  - louvain
  - r-rngtools
  - bioconductor-rhdf5lib
+ - r-devtools
+ - r-gam
+ - r-rcolorbrewer
+ - r-biocmanager
  - pip
  - pip:
    - MulticoreTSNE
