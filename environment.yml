@@ -29,6 +29,11 @@ dependencies:
  - r-gam
  - r-rcolorbrewer
  - r-biocmanager
+ - bioconductor-scran
+ - bioconductor-mast
+ - bioconductor-monocle
+ - bioconductor-complexheatmap
+ - bioconductor-slingshot
  - pip
  - pip:
    - MulticoreTSNE
