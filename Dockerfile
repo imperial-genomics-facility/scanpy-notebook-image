@@ -39,7 +39,9 @@ RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     mkdir -p ${TMPDIR} && \
     mkdir -p /home/$NB_USER/.cache && \
     find miniconda3/ -type f -name *.pyc -exec rm -f {} \;
-RUN Rscript -e 'BiocManager::install(c("scran","MAST","monocle","ComplexHeatmap","slingshot"))'
+RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
+    conda activate notebook-env && \
+    Rscript -e 'BiocManager::install(c("scran","MAST","monocle","ComplexHeatmap","slingshot"))'
 EXPOSE 8888
 ENTRYPOINT [ "/usr/local/bin/tini","--","/home/vmuser/entrypoint.sh" ]
 CMD [ "notebook" ]
