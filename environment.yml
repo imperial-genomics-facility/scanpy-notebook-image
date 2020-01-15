@@ -24,11 +24,12 @@ dependencies:
  - python-igraph
  - louvain
  - r-rngtools
- - bioconductor-rhdf5lib
+ - r-stringi
  - r-devtools
  - r-gam
  - r-rcolorbrewer
  - r-biocmanager
+ - bioconductor-rhdf5lib
  - bioconductor-scran
  - bioconductor-mast
  - bioconductor-monocle
