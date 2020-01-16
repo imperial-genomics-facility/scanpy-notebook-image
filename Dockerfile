@@ -13,6 +13,8 @@ RUN apt-get -y update &&   \
       libreadline6-dev \
       libreadline6 \
       libicu-dev \
+      libc6-dev \
+      icu-devtools \
       gcc \
       g++ \
       libgcc-5-dev \
