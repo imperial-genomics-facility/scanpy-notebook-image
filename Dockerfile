@@ -34,6 +34,7 @@ RUN chown ${NB_UID} /home/$NB_USER/environment.yml && \
 USER $NB_USER
 WORKDIR /home/$NB_USER
 RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
+    conda deactivate && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
     conda clean -a -y && \
     rm -rf /home/$NB_USER/.cache && \
@@ -42,6 +43,9 @@ RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     mkdir -p ${TMPDIR} && \
     mkdir -p /home/$NB_USER/.cache && \
     find miniconda3/ -type f -name *.pyc -exec rm -f {} \;
+RUN /home/vmuser/miniconda3/envs/notebook-env/bin/Rscript -e "install.packages(c('devtools', 'gam', 'RColorBrewer', 'BiocManager','stringi'),repos='https://cloud.r-project.org/')" && \
+    /home/vmuser/miniconda3/envs/notebook-env/bin/Rscript -e "update.packages(ask=F)" && \
+    /home/vmuser/miniconda3/envs/notebook-env/bin/Rscript -e "BiocManager::install(c('scran','MAST','monocle','ComplexHeatmap','slingshot'))"
 EXPOSE 8888
 ENTRYPOINT [ "/usr/local/bin/tini","--","/home/vmuser/entrypoint.sh" ]
 CMD [ "notebook" ]
