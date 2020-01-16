@@ -47,7 +47,7 @@ WORKDIR /home/$NB_USER
 RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     conda deactivate && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
-    conda install -n notebook-env -c r r-stringi -y && \
+    conda install -n notebook-env -c r r-stringi=1.4.3 -y && \
     conda clean -a -y && \
     rm -rf /home/$NB_USER/.cache && \
     rm -rf /tmp/* && \
