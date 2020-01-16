@@ -16,6 +16,8 @@ RUN apt-get -y update &&   \
       libc6-dev \
       icu-devtools \
       libjpeg-dev \
+      libxext-dev \
+      libcairo2 \
       gcc \
       g++ \
       make \
