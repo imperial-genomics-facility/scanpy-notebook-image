@@ -1,4 +1,4 @@
-FROM imperialgenomicsfacility/base-notebook-image:v0.0.3
+FROM imperialgenomicsfacility/base-notebook-image:release-v0.0.3
 LABEL maintainer="imperialgenomicsfacility"
 LABEL version="0.0.1"
 LABEL description="Docker image for running Scanpy based single cell analysis"
