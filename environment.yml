@@ -23,6 +23,7 @@ dependencies:
  - statsmodels
  - python-igraph
  - louvain
+ - r-rcpp
  - r-rngtools
  - r-stringi
  - r-devtools
