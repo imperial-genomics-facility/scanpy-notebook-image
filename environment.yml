@@ -35,6 +35,7 @@ dependencies:
  - bioconductor-mast
  - bioconductor-monocle
  - bioconductor-complexheatmap
+ - bioconductor-clusterexperiment
  - bioconductor-slingshot
  - pip
  - pip:
