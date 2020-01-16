@@ -15,6 +15,7 @@ RUN apt-get -y update &&   \
       libicu-dev \
       libc6-dev \
       icu-devtools \
+      libjpeg-dev \
       gcc \
       g++ \
       make \
