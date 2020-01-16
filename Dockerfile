@@ -13,7 +13,9 @@ RUN apt-get -y update &&   \
       libreadline6-dev \
       libreadline6 \
       libicu-dev \
+      gcc \
       g++ \
+      libgcc-5-dev \
       git  && \
     apt-get purge -y --auto-remove && \
     apt-get clean && \
