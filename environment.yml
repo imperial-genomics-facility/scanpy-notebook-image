@@ -46,4 +46,5 @@ dependencies:
    - scanpy==1.4.5.post2
    - rpy2==3.2.4
    - leidenalg==0.7.0
+   - plotly==4.4.1
    - git+https://github.com/flying-sheep/anndata2ri
