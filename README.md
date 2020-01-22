@@ -5,16 +5,69 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imperial-genomics-facility/scanpy-notebook-image/master?urlpath=lab)
 [![nbviewer](https://img.shields.io/badge/launch-nbviewer-coral)](https://nbviewer.jupyter.org/github/imperial-genomics-facility/scanpy-notebook-image/tree/master/)
 # Notebook container image for running single cell data analysis using scanpy
-A repository for keeping conda env and docker image file for running single cell analysis using scanpy
+A repository for keeping conda env and docker image file for running single cell analysis using scanpy. Example notebooks are kept at `examples` dir and template notebooks are kept in `templates` dir.
 
 ## Installed packages
 
  * Python v3.6.9
- * Scanpy v1.4
- * R v3.5.1
+ * Scanpy v1.4.5
  * Scran v1.10.1
- * Louvain v0.6.1
+ * Leidenalg v0.7.0
+ * MAST v1.12.0
+ * Monocle v2.14.0
+ * Clusterexperiment v2.6.0
+ * Slingshot v1.4.0
 
-Explore this repo in nbviewer: [![nbviewer](https://img.shields.io/badge/launch-nbviewer-coral)](https://nbviewer.jupyter.org/github/imperial-genomics-facility/scanpy-notebook-image/tree/master/)
+ Please check the `environment.yml` file for more details.
 
-Launce notebooks in binder: [ ![binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imperial-genomics-facility/scanpy-notebook-image/master?urlpath=lab)
+## Explore notebooks
+
+Explore the example notebooks from this repo in `examples` dir using nbviewer: <p/>
+  [![nbviewer](https://img.shields.io/badge/launch-nbviewer-coral)](https://nbviewer.jupyter.org/github/imperial-genomics-facility/scanpy-notebook-image/tree/master/)
+
+## Run notebooks
+
+### Using binder
+
+Launce notebooks in binder for exploratory analysis: <p/>
+[![binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imperial-genomics-facility/scanpy-notebook-image/master?urlpath=lab)
+
+### Using Docker
+
+Use the following command to pull docker image from Docker hub
+
+* Pulling the latest image
+<pre><code>docker pull imperialgenomicsfacility/scanpy-notebook-image
+</code></pre>
+
+* Pulling a specific release <p/>
+
+<pre><code>docker pull imperialgenomicsfacility/scanpy-notebook-image:release-xyz
+</code></pre>
+
+Then run the notebooks in docker
+
+<pre><code>docker run
+  -p 8888:8888 
+  -v /path/:/tmp 
+  imperialgenomicsfacility/scanpy-notebook-image:tag
+</code></pre>
+
+### Using Singularity
+
+Build singularity image
+
+<pre><code>singularity 
+  build 
+  scanpy-notebook-image.sif 
+  docker://imperialgenomicsfacility/scanpy-notebook-image
+</code></pre>
+
+Run jupyter notebook or nbconvert from singularity container
+
+<pre><code>singularity
+  run
+  --bind /path:/tmp
+  scanpy-notebook-image.sif
+    jupyter nbconvert /tmp/notebook.ipynb --execute
+</code></pre>
