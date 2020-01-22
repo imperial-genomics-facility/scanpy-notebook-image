@@ -34,18 +34,18 @@ Launce notebooks in binder for exploratory analysis: <p/>
 
 ### Using Docker
 
-Use the following command to pull docker image from Docker hub
+* Install Docker following these instructions: [Docker Engine overview](https://docs.docker.com/install/)
+* Use the following command to pull docker image from Docker hub
 
-* Pulling the latest image
-<pre><code>docker pull imperialgenomicsfacility/scanpy-notebook-image
-</code></pre>
+  * Pull the latest image
+  <pre><code>docker pull imperialgenomicsfacility/scanpy-notebook-image
+  </code></pre>
 
-* Pulling a specific release <p/>
+  * Pull a specific release <p/>
+  <pre><code>docker pull imperialgenomicsfacility/scanpy-notebook-image:release-xyz
+  </code></pre>
 
-<pre><code>docker pull imperialgenomicsfacility/scanpy-notebook-image:release-xyz
-</code></pre>
-
-Then run the notebooks in docker
+* Run notebook container in docker
 
 <pre><code>docker run
   -p 8888:8888 
@@ -55,7 +55,7 @@ Then run the notebooks in docker
 
 ### Using Singularity
 
-Build singularity image
+* Build singularity image
 
 <pre><code>singularity 
   build 
@@ -63,7 +63,7 @@ Build singularity image
   docker://imperialgenomicsfacility/scanpy-notebook-image
 </code></pre>
 
-Run jupyter notebook or nbconvert from singularity container
+* Run jupyter notebook or nbconvert from singularity container
 
 <pre><code>singularity
   run
