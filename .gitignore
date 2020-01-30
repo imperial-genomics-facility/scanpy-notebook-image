@@ -1,2 +1,3 @@
 templates/.ipynb_checkpoints/*
 examples/.ipynb_checkpoints/*
+examples/cache/*.h5ad
