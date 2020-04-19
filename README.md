@@ -15,7 +15,7 @@ List of prerequisites for using these example notebooks:
 
 ## List of example notebooks:
 
-* [Preprocessing and clustering 3k PBMCs from a Healthy Donor (10x Genomics) v0.0.2](https://nbviewer.jupyter.org/github/imperial-genomics-facility/scanpy-notebook-image/blob/master/examples/Clustering_3K_PBMCs_v0.0.2.ipynb) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imperial-genomics-facility/scanpy-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2FClustering_3K_PBMCs_v0.0.2.ipynb)
+* [Preprocessing and clustering 3k PBMCs from a Healthy Donor (10x Genomics) v0.0.2 :](https://nbviewer.jupyter.org/github/imperial-genomics-facility/scanpy-notebook-image/blob/master/examples/Clustering_3K_PBMCs_v0.0.2.ipynb) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imperial-genomics-facility/scanpy-notebook-image/master?urlpath=lab%2Ftree%2Fexamples%2FClustering_3K_PBMCs_v0.0.2.ipynb)
 
 ## Installed packages
 
