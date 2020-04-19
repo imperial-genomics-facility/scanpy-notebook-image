@@ -10,8 +10,12 @@ A repository for keeping conda env and docker image file for running single cell
 List of prerequisites for using these example notebooks:
 
 * [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/latest/index.html)
-* [Single cell analysis using Cellranger (10X genomics)](ttps://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+* [Single cell analysis using Cellranger \(10X genomics\)](ttps://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
 * [Scanpy package for single cell data analysis](https://icb-scanpy.readthedocs-hosted.com/en/stable/)
+
+## List of example notebooks:
+
+* [Preprocessing and clustering 3k PBMCs from a Healthy Donor \(10x Genomics\) v0.0.2](https://nbviewer.jupyter.org/github/imperial-genomics-facility/scanpy-notebook-image/blob/master/examples/Clustering_3K_PBMCs_v0.0.2.ipynb)
 
 ## Installed packages
 
