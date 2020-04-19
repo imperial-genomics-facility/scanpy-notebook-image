@@ -5,6 +5,14 @@
 # Notebook container image for running single cell data analysis using scanpy
 A repository for keeping conda env and docker image file for running single cell analysis using scanpy. Example notebooks are kept at `examples` dir and template notebooks are kept in `templates` dir.
 
+## Before using examples notebooks
+
+List of prerequisites for using these example notebooks:
+
+* [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/latest/index.html)
+* [Single cell analysis using Cellranger (10X genomics)](ttps://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+* [Scanpy package for single cell data analysis](https://icb-scanpy.readthedocs-hosted.com/en/stable/)
+
 ## Installed packages
 
  * Python v3.6.9
