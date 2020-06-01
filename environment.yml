@@ -49,4 +49,5 @@ dependencies:
    - leidenalg==0.7.0
    - plotly==4.4.1
    - jupyter_server_proxy
+   - cellbrowser==0.7.10
    - git+https://github.com/flying-sheep/anndata2ri
