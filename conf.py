@@ -37,9 +37,9 @@ html_theme_options = {
 
 # -- Strip output ----------------------------------------------
 
-import nbclean, glob
-
-for filename in glob.glob('examples/*.ipynb', recursive=True):
-    ntbk = nbclean.NotebookCleaner(filename)
-    ntbk.clear('stderr')
-    ntbk.save(filename)
+#import nbclean, glob#
+#
+#for filename in glob.glob('examples/*.ipynb', recursive=True):
+#    ntbk = nbclean.NotebookCleaner(filename)
+#    ntbk.clear('stderr')
+#    ntbk.save(filename)
