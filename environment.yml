@@ -5,7 +5,6 @@ channels:
 dependencies:
  - conda-forge::cmake
  - conda-forge::r-essentials
- - conda-forge::r-rgl
  - conda-forge::scipy
  - conda-forge::gsl
  - conda-forge::tzlocal
@@ -24,18 +23,10 @@ dependencies:
  - conda-forge::python-igraph
  - conda-forge::louvain
  - conda-forge::r-rcpp
- - conda-forge::r-rngtools
- - r::r-stringi=1.4.3
  - conda-forge::r-devtools
- - conda-forge::r-gam
  - conda-forge::r-rcolorbrewer
  - conda-forge::r-biocmanager
- - bioconda::bioconductor-rhdf5lib
  - bioconda::bioconductor-scran
- - bioconda::bioconductor-mast
- - bioconda::bioconductor-monocle
- - bioconda::bioconductor-complexheatmap
- - bioconda::bioconductor-clusterexperiment
  - bioconda::bioconductor-slingshot
  - pip
  - pip:
