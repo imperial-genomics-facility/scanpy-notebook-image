@@ -1,6 +1,6 @@
-FROM imperialgenomicsfacility/base-notebook-image:release-v0.0.3
+FROM imperialgenomicsfacility/base-notebook-image:release-v0.0.5
 LABEL maintainer="imperialgenomicsfacility"
-LABEL version="0.0.2"
+LABEL version="0.0.3"
 LABEL description="Docker image for running Scanpy based single cell analysis"
 ENV NB_USER vmuser
 ENV NB_UID 1000
@@ -44,11 +44,8 @@ RUN chown ${NB_UID} /home/$NB_USER/environment.yml && \
     chown -R ${NB_UID} /home/$NB_USER/examples
 USER $NB_USER
 WORKDIR /home/$NB_USER
-RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
-    conda update -n base -c defaults conda && \
-    conda activate notebook-env && \
+RUN conda update -n base -c defaults conda && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
-    jupyter serverextension enable --sys-prefix jupyter_server_proxy && \
     conda clean -a -y && \
     rm -rf /home/$NB_USER/.cache && \
     rm -rf /tmp/* && \
