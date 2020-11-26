@@ -38,4 +38,4 @@ dependencies:
    - leidenalg==0.8.3
    - plotly==4.13.0
    - cellbrowser==0.7.15
-   - git+https://github.com/flying-sheep/anndata2ri==1.0.5.dev2+ea266ab
+   - git+https://github.com/flying-sheep/anndata2ri
