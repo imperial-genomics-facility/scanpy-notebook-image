@@ -44,7 +44,8 @@ RUN chown ${NB_UID} /home/$NB_USER/environment.yml && \
     chown -R ${NB_UID} /home/$NB_USER/examples
 USER $NB_USER
 WORKDIR /home/$NB_USER
-RUN conda update -n base -c defaults conda && \
+RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
+    conda update -n base -c defaults conda && \
     conda deactivate \
     conda create -n notebook-env python=3.6.9 && \
     conda activate notebook-env && \
