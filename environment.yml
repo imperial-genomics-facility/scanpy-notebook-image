@@ -253,13 +253,13 @@ dependencies:
  - bioconda::bioconductor-zlibbioc
  - pip
  - pip:
-   - MulticoreTSNE==0.1
-   - anndata==0.7.5
-   - fa2==0.3.5
-   - gprofiler-official==1.0.0
-   - scanpy==1.6.
-   - scipy==1.5.4
-   - leidenalg==0.8.3
-   - plotly==4.13.0
-   - cellbrowser==0.7.15
+   - MulticoreTSNE
+   - anndata
+   - fa2
+   - gprofiler-official
+   - scanpy
+   - scipy
+   - leidenalg
+   - plotly
+   - cellbrowser
    - git+https://github.com/flying-sheep/anndata2ri
