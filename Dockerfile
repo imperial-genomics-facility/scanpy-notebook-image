@@ -46,7 +46,7 @@ USER $NB_USER
 WORKDIR /home/$NB_USER
 RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     conda update -n base -c defaults conda && \
-    conda deactivate \
+    conda deactivate && \
     conda create -n notebook-env python=3.6.9 && \
     conda activate notebook-env && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
