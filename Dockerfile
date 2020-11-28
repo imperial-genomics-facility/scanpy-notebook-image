@@ -44,14 +44,8 @@ RUN chown ${NB_UID} /home/$NB_USER/environment.yml && \
     chown -R ${NB_UID} /home/$NB_USER/examples
 USER $NB_USER
 WORKDIR /home/$NB_USER
-RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
-    conda update -n base -c defaults conda && \
-    conda deactivate && \
-    conda env remove -n notebook-env && \
-    conda create -n notebook-env python=3.6.9 setuptools=50.3.0 && \
-    conda activate notebook-env && \
+RUN conda update -n base -c defaults conda && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
-    jupyter serverextension enable --sys-prefix jupyter_server_proxy && \
     conda clean -a -y && \
     rm -rf /home/$NB_USER/.cache && \
     rm -rf /tmp/* && \
