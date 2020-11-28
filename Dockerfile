@@ -48,7 +48,7 @@ RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
     conda update -n base -c defaults conda && \
     conda deactivate && \
     conda env remove -n notebook-env && \
-    conda create -n notebook-env python=3.6.9 && \
+    conda create -n notebook-env python=3.6.9 setuptools=50.3.0 && \
     conda activate notebook-env && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
     jupyter serverextension enable --sys-prefix jupyter_server_proxy && \
