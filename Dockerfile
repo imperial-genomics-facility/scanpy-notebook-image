@@ -45,7 +45,11 @@ RUN chown ${NB_UID} /home/$NB_USER/environment.yml && \
 USER $NB_USER
 WORKDIR /home/$NB_USER
 RUN conda update -n base -c defaults conda && \
+    source deactivate \
+    conda create -n notebook-env python=3.6.9 && \
+    conda activate notebook-env && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
+    jupyter serverextension enable --sys-prefix jupyter_server_proxy && \
     conda clean -a -y && \
     rm -rf /home/$NB_USER/.cache && \
     rm -rf /tmp/* && \
