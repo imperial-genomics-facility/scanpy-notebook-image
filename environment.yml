@@ -3,7 +3,7 @@ channels:
  - bioconda
 dependencies:
  - conda-forge::cmake=3.18.4=h1f3970d_0
- - conda-forge::r-base=3.5.0
+ - conda-forge::r-base=3.5.3
  - conda-forge::r-essentials=4.0=r40_2002
  - conda-forge::gsl=2.6=hf94e986_0
  - conda-forge::tzlocal=2.1=pyh9f0ad1d_0
