@@ -1,6 +1,7 @@
 channels:
  - conda-forge
  - bioconda
+ - r
 dependencies:
  - conda-forge::python=3.6.9
  - conda-forge::cython
@@ -8,6 +9,7 @@ dependencies:
  - conda-forge::cmake
  - conda-forge::r-base=3.5.1
  - conda-forge::r-essentials
+ - conda-forge::r-rgl
  - conda-forge::gsl
  - conda-forge::tzlocal
  - conda-forge::simplegeneric
@@ -21,83 +23,24 @@ dependencies:
  - conda-forge::joblib
  - conda-forge::numexpr
  - conda-forge::pytables
+ - conda-forge::seaborn
  - conda-forge::statsmodels
  - conda-forge::python-igraph
  - conda-forge::louvain
  - conda-forge::r-rcpp
+ - conda-forge::r-rngtools
+ - r::r-stringi
  - conda-forge::r-devtools
+ - conda-forge::r-gam
  - conda-forge::r-rcolorbrewer
  - conda-forge::r-biocmanager
- - conda-forge::r-essentials
- - conda-forge::r-generics
- - conda-forge::r-ggplot2
- - conda-forge::r-irkernel
-
- - conda-forge::r-pkgbuild
- - conda-forge::r-pkgconfig
- - conda-forge::r-pkgload
- - conda-forge::r-plyr
- - conda-forge::r-rbokeh
- - conda-forge::r-rcmdcheck
- - conda-forge::r-rcppannoy
- - conda-forge::r-rcpphnsw
- - conda-forge::r-rcurl
- - conda-forge::r-readr
- - conda-forge::r-readxl
- - conda-forge::r-recipes
- - conda-forge::r-recommended
- - conda-forge::r-rematch
- - conda-forge::r-rematch2
- - conda-forge::r-remotes
- - conda-forge::r-repr
- - conda-forge::r-reprex
- - conda-forge::r-shape
- - conda-forge::r-shiny
- - conda-forge::r-snow
- - conda-forge::r-sourcetools
- - conda-forge::r-spatial
- - conda-forge::r-statmod
- - conda-forge::r-stringi
- - conda-forge::r-stringr
- - conda-forge::r-tidyr
- - conda-forge::r-tidyselect
- - conda-forge::r-tidyverse
- - conda-forge::r-rngtools
- - conda-forge::r-gam
+ - bioconda::bioconductor-rhdf5lib
+ - bioconda::bioconductor-scran
  - bioconda::bioconductor-mast
  - bioconda::bioconductor-monocle
  - bioconda::bioconductor-complexheatmap
  - bioconda::bioconductor-clusterexperiment
  - bioconda::bioconductor-slingshot
- - bioconda::bioconductor-scran
- - bioconda::bioconductor-slingshot
- - bioconda::bioconductor-beachmat
- - bioconda::bioconductor-biobase
- - bioconda::bioconductor-biocgenerics
- - bioconda::bioconductor-biocneighbors
- - bioconda::bioconductor-biocparallel
- - bioconda::bioconductor-biocsingular
- - bioconda::bioconductor-bluster
- - bioconda::bioconductor-delayedarray
- - bioconda::bioconductor-delayedmatrixstats
- - bioconda::bioconductor-edger
- - bioconda::bioconductor-genomeinfodb
- - bioconda::bioconductor-genomeinfodbdata
- - bioconda::bioconductor-genomicranges
- - bioconda::bioconductor-hdf5array
- - bioconda::bioconductor-iranges
- - bioconda::bioconductor-limma
- - bioconda::bioconductor-matrixgenerics
- - bioconda::bioconductor-rhdf5
- - bioconda::bioconductor-rhdf5filters
- - bioconda::bioconductor-rhdf5lib
- - bioconda::bioconductor-s4vectors
- - bioconda::bioconductor-scuttle
- - bioconda::bioconductor-singlecellexperiment
- - bioconda::bioconductor-sparsematrixstats
- - bioconda::bioconductor-summarizedexperiment
- - bioconda::bioconductor-xvector
- - bioconda::bioconductor-zlibbioc
  - pip
  - pip:
    - pandas
