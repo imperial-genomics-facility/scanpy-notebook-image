@@ -214,10 +214,10 @@ dependencies:
  - conda-forge::r-yaml=2.2.1=r40hcdcec82_1
  - conda-forge::r-zeallot=0.1.0=r40h6115d3f_1002
  - conda-forge::r-zoo=1.8_8=r40hcdcec82_0
- - bioconda::bioconductor-mast
- - bioconda::bioconductor-monocle
- - bioconda::bioconductor-complexheatmap
- - bioconda::bioconductor-clusterexperiment
+ - bioconda::bioconductor-mast=1.16.0=r40_0
+ - bioconda::bioconductor-monocle=2.18.0=r40h5f743cb_1
+ - bioconda::bioconductor-complexheatmap=2.6.0=r40_0
+ - bioconda::bioconductor-clusterexperiment=2.10.0=r40h5f743cb_0
  - bioconda::bioconductor-scran=1.18.0=r40h5f743cb_0
  - bioconda::bioconductor-slingshot=1.8.0=r40_0
  - bioconda::bioconductor-beachmat=2.6.0=r40h5f743cb_0
