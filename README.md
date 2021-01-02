@@ -1,6 +1,6 @@
 [![DockerPulls](https://img.shields.io/docker/pulls/imperialgenomicsfacility/scanpy-notebook-image.svg)](https://registry.hub.docker.com/r/imperialgenomicsfacility/scanpy-notebook-image)
 [![DockerStars](https://img.shields.io/docker/stars/imperialgenomicsfacility/scanpy-notebook-image.svg)](https://registry.hub.docker.com/r/imperialgenomicsfacility/scanpy-notebook-image)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imperial-genomics-facility/scanpy-notebook-image/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/imperial-genomics-facility/scanpy-notebook-image/v3?urlpath=lab)
 [![nbviewer](https://img.shields.io/badge/launch-nbviewer-coral)](https://nbviewer.jupyter.org/github/imperial-genomics-facility/scanpy-notebook-image/tree/master/)
 # Notebook container image for running single cell data analysis using scanpy
 A repository for keeping conda env and docker image file for running single cell analysis using scanpy. Example notebooks are kept at `examples` dir and template notebooks are kept in `templates` dir.
