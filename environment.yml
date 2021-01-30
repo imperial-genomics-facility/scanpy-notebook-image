@@ -256,6 +256,7 @@ dependencies:
    - scanpy==1.6.
    - scipy==1.5.4
    - leidenalg==0.8.3
+   - umap-learn==0.4.6
    - plotly==4.13.0
    - cellbrowser==0.7.15
    - git+https://github.com/flying-sheep/anndata2ri
