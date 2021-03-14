@@ -33,6 +33,7 @@ USER $NB_USER
 WORKDIR /home/$NB_USER
 ENV TMPDIR=/home/$NB_USER/.tmp
 ENV PATH=$PATH:/home/$NB_USER/miniconda3/bin/
+ENV NUMBA_CACHE_DIR=/tmp
 RUN rm -f /home/$NB_USER/environment.yml && \
     rm -f /home/$NB_USER/Dockerfile
 COPY environment.yml /home/$NB_USER/environment.yml
