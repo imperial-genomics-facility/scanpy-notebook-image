@@ -32,6 +32,7 @@ dependencies:
    - PhenoGraph==1.5.7
    - leidenalg==0.8.4
    - umap-learn==0.5.1
-   - plotly==4.14.4
+   - plotly==4.14.3
+   - iplotter==0.4.3
    - cellbrowser==1.0.1
    - git+https://github.com/flying-sheep/anndata2ri
