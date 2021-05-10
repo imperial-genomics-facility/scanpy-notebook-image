@@ -6,7 +6,7 @@ dependencies:
  - conda-forge::natsort=7.1.1
  - conda-forge::h5py=3.2.1
  - conda-forge::llvmlite=0.36.0
- - conda-forge::numba=0.53.1
+ - conda-forge::numba=0.51.2
  - conda-forge::networkx=2.5.1
  - conda-forge::joblib=1.0.1
  - conda-forge::numexpr=2.7.3
