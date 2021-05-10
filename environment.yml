@@ -2,23 +2,23 @@ channels:
  - conda-forge
  - bioconda
 dependencies:
- - conda-forge::cmake
- - conda-forge::gsl
- - conda-forge::tzlocal
- - conda-forge::simplegeneric
- - conda-forge::natsort
- - conda-forge::h5py
- - conda-forge::tqdm
- - conda-forge::patsy
- - conda-forge::llvmlite
- - conda-forge::numba
- - conda-forge::networkx
- - conda-forge::joblib
- - conda-forge::numexpr
- - conda-forge::pytables
- - conda-forge::statsmodels
- - conda-forge::python-igraph
- - conda-forge::louvain
+ - conda-forge::cmake=3.20.2
+ - conda-forge::gsl=2.6
+ - conda-forge::tzlocal=2.1
+ - conda-forge::simplegeneric=0.8.1
+ - conda-forge::natsort=7.1.1
+ - conda-forge::h5py=3.2.1
+ - conda-forge::tqdm=4.60.0
+ - conda-forge::patsy=0.5.1
+ - conda-forge::llvmlite=0.36.0
+ - conda-forge::numba=0.51.2
+ - conda-forge::networkx=2.5.1
+ - conda-forge::joblib=1.0.1
+ - conda-forge::numexpr=2.7.3
+ - conda-forge::pytables=3.6.1
+ - conda-forge::statsmodels=0.12.2
+ - conda-forge::python-igraph=0.9.1
+ - conda-forge::louvain=0.7.0
  - pip
  - pip:
    - anndata==0.7.6
@@ -34,4 +34,7 @@ dependencies:
    - plotly==4.14.3
    - iplotter==0.4.3
    - cellbrowser==1.0.1
+   - scvelo==0.2.3
+   - pybind11==2.6.2
+   - hnswlib==0.5.1
    - git+https://github.com/flying-sheep/anndata2ri
