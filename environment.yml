@@ -3,9 +3,7 @@ channels:
  - bioconda
 dependencies:
  - conda-forge::cmake=3.20.2
- - conda-forge::gsl=2.6
  - conda-forge::tzlocal=2.1
- - conda-forge::simplegeneric=0.8.1
  - conda-forge::natsort=7.1.1
  - conda-forge::h5py=3.2.1
  - conda-forge::llvmlite=0.36.0
@@ -13,7 +11,6 @@ dependencies:
  - conda-forge::networkx=2.5.1
  - conda-forge::joblib=1.0.1
  - conda-forge::numexpr=2.7.3
- - conda-forge::pytables=3.6.1
  - conda-forge::statsmodels=0.12.2
  - conda-forge::python-igraph=0.9.1
  - conda-forge::louvain=0.7.0
