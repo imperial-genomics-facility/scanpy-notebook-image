@@ -48,7 +48,6 @@ USER $NB_USER
 WORKDIR /home/$NB_USER
 RUN conda update -n base -c defaults conda && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
-    conda install -n notebook-env -c conda-forge numba=0.51.2 -y && \
     conda clean -a -y && \
     rm -rf /home/$NB_USER/.cache && \
     rm -rf /tmp/* && \

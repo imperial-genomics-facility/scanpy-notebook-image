@@ -2,7 +2,6 @@ channels:
  - conda-forge
  - bioconda
 dependencies:
- - conda-forge::cmake=3.20.2
  - conda-forge::tzlocal=2.1
  - conda-forge::natsort=7.1.1
  - conda-forge::h5py=3.2.1
