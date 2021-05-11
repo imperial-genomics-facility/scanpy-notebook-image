@@ -4,11 +4,12 @@ channels:
 dependencies:
  - conda-forge::h5py=3.2.1
  - conda-forge::llvmlite=0.36.0
- - conda-forge::numba=0.53.1
+ - conda-forge::numba=0.51.2
  - conda-forge::networkx=2.5.1
  - conda-forge::joblib=1.0.1
  - conda-forge::python-igraph=0.9.1
  - conda-forge::louvain=0.7.0
+ - conda-forge::umap-learn
  - pip
  - pip:
    - anndata==0.7.6
@@ -20,7 +21,6 @@ dependencies:
    - phate==1.0.7
    - PhenoGraph==1.5.7
    - leidenalg==0.8.4
-   - umap-learn==0.5.1
    - plotly==4.14.3
    - iplotter==0.4.3
    - cellbrowser==1.0.1
