@@ -2,28 +2,31 @@ channels:
  - conda-forge
  - bioconda
 dependencies:
- - conda-forge::h5py=3.2.1
- - conda-forge::llvmlite=0.36.0
- - conda-forge::numba=0.51.2
- - conda-forge::networkx=2.5.1
- - conda-forge::joblib=1.0.1
- - conda-forge::python-igraph=0.9.1
- - conda-forge::louvain=0.7.0
+ - conda-forge::h5py
+ - conda-forge::llvmlite
+ - conda-forge::numba
+ - conda-forge::networkx
+ - conda-forge::joblib
+ - conda-forge::python-igraph
+ - conda-forge::louvain
  - conda-forge::umap-learn
+ - conda-forge::cython
+ - conda-forge::click
  - pip
  - pip:
-   - anndata==0.7.6
-   - fa2==0.3.5
-   - gprofiler-official==1.0.0
-   - scanpy==1.7.2
-   - scipy==1.5.4
-   - scrublet==0.2.3
-   - phate==1.0.7
-   - PhenoGraph==1.5.7
-   - leidenalg==0.8.4
-   - plotly==4.14.3
-   - iplotter==0.4.3
-   - cellbrowser==1.0.1
-   - scvelo==0.2.3
-   - pybind11==2.6.2
-   - hnswlib==0.5.1
+   - anndata
+   - fa2
+   - gprofiler-official
+   - scanpy
+   - scipy
+   - scrublet
+   - phate
+   - PhenoGraph
+   - leidenalg
+   - plotly
+   - iplotter
+   - cellbrowser
+   - scvelo
+   - pybind11
+   - hnswlib
+   - velocyto
