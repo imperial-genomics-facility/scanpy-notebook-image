@@ -11,7 +11,7 @@ dependencies:
  - conda-forge::louvain=0.7.0
  - conda-forge::cython=0.29.23
  - conda-forge::click=7.1.2
- - bioconda::samtools=0.1.19
+ - bioconda::samtools=1.12
  - pip
  - pip:
    - anndata==0.7.6
