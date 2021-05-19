@@ -10,7 +10,7 @@ RUN apt-get -y update &&   \
     apt-get install --no-install-recommends -y \
       libfontconfig1 \
       libxrender1 \
-      libreadline7-dev \
+      libreadline-dev \
       libreadline7 \
       libicu-dev \
       libc6-dev \
@@ -18,7 +18,7 @@ RUN apt-get -y update &&   \
       libjpeg-dev \
       libxext-dev \
       libcairo2 \
-      libicu57 \
+      libicu60 \
       libicu-dev \
       gcc \
       g++ \
