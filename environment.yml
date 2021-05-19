@@ -34,3 +34,4 @@ dependencies:
    - matplotlib==3.4.1
    - matplotlib-inline==0.1.2
    - ipykernel==5.5.5
+   - nbconvert==6.0.7
