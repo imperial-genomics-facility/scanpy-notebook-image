@@ -33,3 +33,4 @@ dependencies:
    - umap-learn==0.4.6
    - matplotlib==3.4.1
    - matplotlib-inline==0.1.2
+   - ipykernel==5.5.5
